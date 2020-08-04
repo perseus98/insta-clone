@@ -1,3 +1,4 @@
+import 'package:buddiesgram/widgets/HeaderWidget.dart';
 import 'package:flutter/material.dart';
 
 class NotificationsPage extends StatefulWidget {
@@ -8,13 +9,13 @@ class NotificationsPage extends StatefulWidget {
 class _NotificationsPageState extends State<NotificationsPage> {
   @override
   Widget build(BuildContext context) {
-    return Text('Here goes Activity Feed Page');
+    return Scaffold(
+      appBar: header(context, strTitle: "Notification"),
+    );
   }
 }
 
 class NotificationsItem extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return Text('Activity Feed Item goes here');
-  }
+  Widget build(BuildContext context) {}
 }

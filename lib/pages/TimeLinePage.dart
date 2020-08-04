@@ -1,3 +1,5 @@
+import 'package:buddiesgram/widgets/HeaderWidget.dart';
+import 'package:buddiesgram/widgets/ProgressWidget.dart';
 import 'package:flutter/material.dart';
 
 class TimeLinePage extends StatefulWidget {
@@ -8,6 +10,9 @@ class TimeLinePage extends StatefulWidget {
 class _TimeLinePageState extends State<TimeLinePage> {
   @override
   Widget build(context) {
-    return Text("TimeLine Page goes here.");
+    return Scaffold(
+      appBar: header(context, isAppTitle: true),
+      body: circularProgress(),
+    );
   }
 }
